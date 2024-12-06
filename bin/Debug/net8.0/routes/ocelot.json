@@ -1,0 +1,19 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/api/v1/users/auth/",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 8080
+          }
+        ],
+        "UpstreamPathTemplate": "/users/auth/",
+        "UpstreamHttpMethod": [ "Get", "Post" ]
+      }
+    ],
+    "GlobalConfiguration": {
+      "BaseUrl": "http://localhost:5000"
+    }
+  }
