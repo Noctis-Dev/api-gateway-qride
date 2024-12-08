@@ -31,7 +31,7 @@ docker build -t api-gateway-qride .
 
 bash
 ```
-docker run -p 8080:80 sci-all-api-gateway
+docker run -p 8080:80 api-gateway-qride
 ```
 ###Accede al API Gateway:
 - Abre http://localhost:8080 en tu navegador.
