@@ -42,3 +42,6 @@ C:\Users\Mane\Documents\api-simp\tetas\obj\Debug\net8.0\refint\tetas.dll
 C:\Users\Mane\Documents\api-simp\tetas\obj\Debug\net8.0\tetas.pdb
 C:\Users\Mane\Documents\api-simp\tetas\obj\Debug\net8.0\tetas.genruntimeconfig.cache
 C:\Users\Mane\Documents\api-simp\tetas\obj\Debug\net8.0\ref\tetas.dll
+C:\Users\Mane\Documents\api-simp\tetas\obj\Debug\net8.0\tetas.sourcelink.json
+C:\Users\Mane\Documents\api-simp\tetas\bin\Debug\net8.0\Routes\ocelot.users.json
+C:\Users\Mane\Documents\api-simp\tetas\bin\Debug\net8.0\Routes\ocelot.transport.json

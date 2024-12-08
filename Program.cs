@@ -9,11 +9,20 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var env = builder.Environment;
-builder.Configuration.AddOcelot("./routes", env);
+builder.Configuration.AddOcelot("./Routes/", env);
 builder.Services.AddOcelot(builder.Configuration);
 
 var app = builder.Build();
 
-app.UseOcelot().Wait();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.UseHttpsRedirection();
+
+// Use Ocelot middleware
+app.UseOcelot().Wait();
+
 app.Run();

@@ -1,0 +1,139 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/chats/{route_name}/messages/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/chats/{route_name}/messages/",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/city",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/city",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/incidents",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/incidents",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/incidents/{incident_id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/incidents/{incident_id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/route",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/route",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/routes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/routes",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/route_stop",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/route_stop",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/route_draw",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/route_draw",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/route_stops/nearby",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/route_stops/nearby",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/log_activity/{user_uuid}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/log_activity/{user_uuid}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/vehicles/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "18.216.82.79",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/transport/vehicles",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://qrideapi.zapto.org"
+  }
+}
